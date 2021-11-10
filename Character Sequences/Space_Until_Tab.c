@@ -16,7 +16,7 @@ Enter a Sentence: I Love Learning Software.
 
 int main()
 {
-    char sentence[150], space = "   ";
+    char sentence[150];
     int character = 0, i = 0, tab = 0;
 
     printf("Enter a sentence: ");
