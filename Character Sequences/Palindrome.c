@@ -14,7 +14,7 @@ If so, let it send 1 if it is a palindrome, and 0 if it is not a palindrome.
 and then prints whether there is a palindrome or not.
 */
 
-int main(void){
+int main(){
     char sequence[150];
     int a;
     printf("Enter a character sequence: ");
@@ -23,7 +23,7 @@ int main(void){
     if(a == 1){
         printf("\n---------------------\nThis word is a palindrome.\n----------------------");
     }
-    if(a == 0){
+    else if(a == 0){
         printf("\n---------------------\nThis word is not a palindrome.\n------------------------");
     }
     return 0;
@@ -40,11 +40,7 @@ void read_sentence(char sequence[150]){
 }
 
 int lenght(char sequence[150]){
-    int i = 0;
-    while(sequence[i] != '\0'){
-        i++;
-    }
-    return i;
+    return strlen(sequence);
 }
 
 void delete_spaces(char sequence[150]){
