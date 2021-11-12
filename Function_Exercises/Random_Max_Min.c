@@ -29,7 +29,7 @@ int find_min(int sequence[150], int number) {
 
 int main() {
     int number, i = 0;
-    printf("Enter a number: ");
+    printf("Enter the Number of Elements of the Array: ");
     scanf("%d", &number);
     int sequence[number];
     srand(time(0));
