@@ -6,20 +6,26 @@ which enables the deletion of the sequence value in the relevant row by entering
 */
 
 void delete_element(int sequence[150], int number, int element){
-    int i = 0;
-    while(i < (number - 1)){
-        if(i >= (element - 1)){
-            sequence[i]=sequence[i+1];
+    if(element > number){
+        printf("\n--------------------\nEnter a valid element number!!! \n");
+    }
+    else{
+        int i = 0;
+        while(i < (number - 1)){
+            if(i >= (element - 1)){
+                sequence[i]=sequence[i+1];
+            }
+            i++;
         }
-        i++;
+        sequence[i] = '\0';
+        i = 0;
+        printf("\n--------------------\nAfter deletion of the number in the array: ");
+        while(i < (number - 1)){
+            printf("%d ", sequence[i]);
+            i++;
+        }
     }
-    sequence[i] = '\0';
-    i = 0;
-    printf("\n--------------------\nAfter deletion of the number in the array: ");
-    while(i < (number - 1)){
-        printf("%d ", sequence[i]);
-        i++;
-    }
+
 }
 
 int main()
