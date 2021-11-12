@@ -6,7 +6,7 @@ which enables the deletion of the sequence value in the relevant row by entering
 */
 
 void delete_element(int sequence[150], int number, int element){
-    if(element > number){
+    if(element > number || element <= 0){
         printf("\n--------------------\nEnter a valid element number!!! \n");
     }
     else{
