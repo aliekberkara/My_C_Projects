@@ -16,7 +16,7 @@ Print the figure below:
     * * * * * * * * *
 */
 
-void print_shape(int size){
+void print_shape(char character, int size){
     int i = 0, space, star;
     while(i < size){
         space = i;
@@ -27,7 +27,7 @@ void print_shape(int size){
 //--------------------------
         star = 2 * i;
         while(star < ((size*2) - 1)){
-            printf("* ");
+            printf("%c ", character);
             star++;
         }
 //--------------------------
@@ -45,7 +45,7 @@ void print_shape(int size){
 //--------------------------
         star = 2 * i;
         while(star >= 0){
-            printf("* ");
+            printf("%c ", character);
             star--;
         }
         printf("\n");
@@ -55,10 +55,12 @@ void print_shape(int size){
 
 int main()
 {
-    int size;
+    int size, character;
+    printf("Enter the character to be printed on the screen: ");
+    scanf("%c", &character);
     printf("Enter size of the shape: ");
     scanf("%d", &size);
 
-    print_shape(size);
+    print_shape(character, size);
     return 0;
 }
