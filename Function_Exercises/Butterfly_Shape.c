@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /*
-Print the figure below:
+Print the following figure on the screen using the character to be received from the user:
 
     * * * * * * * * *
       * * * * * * *
