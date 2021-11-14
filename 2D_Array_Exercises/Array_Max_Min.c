@@ -18,8 +18,7 @@ int main()
 	}
 	printf("------------------------\n");
 	i = 0;
-	min = array[i];
-	max = array[i];
+	max = min = array[i];
 	printf("%d ", array[i]);
 	for(i = 1;i < 10; i++){
 		printf("%d ", array[i]);
