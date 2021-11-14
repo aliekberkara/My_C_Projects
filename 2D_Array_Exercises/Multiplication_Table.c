@@ -23,7 +23,7 @@ int main()
 	int i = 0, j = 0;
 	int array[10][10];
 
-    printf("   I   ");
+    printf("    I  ");
     while(i < 10){
 		printf("%4d", i+1);
 		i++;
@@ -38,7 +38,7 @@ int main()
 	printf("\n");
     while(i < 10){
 		j = 0;
-		printf("   %d |", i+1);
+		printf("   %2d |", i+1);
 		while(j < 10){
 			array[i][j] = (i+1) * (j+1);
 			printf("%4d", array[i][j]);
