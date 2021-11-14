@@ -23,7 +23,7 @@ int main()
 	printf("\nThe sentence you entered contains %d characters.", character);
 	i = 0;
 	while(i < 26){
-		printf("%d kez %c\n", counter[i], 'a'+i);
+		printf("%d times %c\n", counter[i], 'a'+i);
 		i++;
 	}
 
