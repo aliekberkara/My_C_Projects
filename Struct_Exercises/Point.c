@@ -8,13 +8,13 @@
 - Print the point p to the screen in printf.
 */
 
-struct point{
+typedef struct{
 float abs, ord;
-};
+}point;
 
 int main()
 {
-    struct point P;
+	point P;
     P.abs = 3;
     P.ord = 2;
     printf("(x,y) = (%.1f, %.1f)\n-------------------", P.abs, P.ord);
