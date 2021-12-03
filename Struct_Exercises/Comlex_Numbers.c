@@ -31,7 +31,7 @@ int main()
     scanf("%s", &operation);
 	int i = 1;
 	while(i==1) {
-    	if(operation == '+'){
+    	        if(operation == '+'){
 			result.real = numbers1.real + numbers2.real;
 			result.imaginary = numbers1.imaginary + numbers2.imaginary;
 			i = 0;
