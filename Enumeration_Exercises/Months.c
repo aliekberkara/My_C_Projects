@@ -22,7 +22,7 @@ void show_month(months month)
 {
     switch(month)
     {
-    case January:
+        case January:
         printf("January");
         break;
         case February:
