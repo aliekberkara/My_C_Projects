@@ -9,15 +9,22 @@
 */
 
 typedef struct{
-float abs, ord;
+	char name[10];
+	float abs, ord;
 }point;
+
+void printScreen(point P[], int number){
+	int i = 0;
+	while(i < 5){
+		printf("%s = (%.1f, %.1f)\n", P[i].name, P[i].abs, P[i].ord);
+		i++;
+	}
+}
 
 int main()
 {
-	point P;
-    P.abs = 3;
-    P.ord = 2;
-    printf("(x,y) = (%.1f, %.1f)\n-------------------", P.abs, P.ord);
+	point P[5] = {{"A", 5, 3}, {"B", 6, 5}, {"C", 9, 4}, {"D", 6, 1}, {"E", 3, 9}};
+    printScreen(P, 5);
 
     return 0;
 }
