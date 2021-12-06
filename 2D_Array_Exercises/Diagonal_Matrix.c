@@ -83,7 +83,7 @@ void Print_Matrix(int *element, int matrix[*element][*element]){
 }
 int main()
 {
-	int element;
+    int element;
     printf("Enter the number of elements of the matrix: ");
     scanf("%d", &element);
     int matrix[element][element];
@@ -103,8 +103,8 @@ int main()
     printf("\n--------------------\n");
     Is_Symmetrical(&element, matrix);
     printf("\n--------------------\n");
-	Is_Diagonal(&element, matrix);
-	printf("\n--------------------\n");
+    Is_Diagonal(&element, matrix);
+    printf("\n--------------------\n");
 
 
     return 0;
