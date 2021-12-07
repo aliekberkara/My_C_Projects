@@ -32,6 +32,7 @@ int main()
     int number,i,control;
     printf("Enter a number: ");
     scanf("%d",&number);
+    printf("-----------------------------\n");
     for(i=2;i<=number;i++)
     {
         control=Is_Prime(i,i/2);
