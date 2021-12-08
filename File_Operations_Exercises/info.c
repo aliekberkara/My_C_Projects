@@ -18,10 +18,16 @@ int main()
 
     FILE *file;
     file = fopen("info.txt", "w");
-    for(int i = 0; i < number; i++){
+    if(file == NULL){
+		printf("Failed to Create File.");
+    }
+    else{
+		for(int i = 0; i < number; i++){
 		fprintf(file, "Row: %d: %s\n", i+1, sentence);
 		printf("Row: %d: %s\n", i+1, sentence);
     }
+    }
+
     fclose(file);
     return 0;
 }
