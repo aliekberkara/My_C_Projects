@@ -10,7 +10,7 @@ int main()
 
     FILE *file;
     char character;
-    file = fopen("print.txt", "r");
+    file = fopen("Print.txt", "r");
     if(file == NULL){
 		printf("Failed to Create File.");
     }
