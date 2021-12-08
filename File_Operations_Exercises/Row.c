@@ -11,7 +11,7 @@ int main()
 	printf("-------------------------\n");
 
 	FILE *file;
-	file = fopen("Row.txt", "r");
+	file = fopen("row.txt", "r");
 	if(file == NULL){
 		printf("Failed to Create File.");
 	}
