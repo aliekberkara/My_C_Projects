@@ -38,6 +38,7 @@ int main()
 		scanf("%f", &person[i].midterm2);
 		printf("Final Grade: ");
 		scanf("%f", &person[i].final_grade);
+		printf("-----------------------------------\n");
 
 		person[i].average = (float) person[i].midterm1*0.2 + (float) person[i].midterm2*0.2 + (float) person[i].final_grade*0.6;
 		i++;
@@ -55,19 +56,18 @@ int main()
 
 		i = 0;
 		while(i<number){
-			fprintf(file, "%10s           %9s           %5.2f           %6.2f           %7.2f           %8.2f\n", person[i].name_surname, person[i].lesson, person[i].midterm1, person[i].midterm2, person[i].final_grade, person[i].average);
+			fprintf(file, "%10s           %9s           %5.2f              %7.2f          %9.2f         %8.2f\n", person[i].name_surname, person[i].lesson, person[i].midterm1, person[i].midterm2, person[i].final_grade, person[i].average);
 			fprintf(file, "-----------------------------------\n");
 			i++;
 		}
 
     }
     fclose(file);
-		printf("-----------------------------------\n");
 		printf("Name and Surname        Lesson        1st Midterm        2nd Midterm        Final Grade        Average\n");
 		printf("----------------      ----------      -----------        -----------        -----------        -------\n");
 		i = 0;
 		while(i < number){
-			printf("%10s           %9s           %5.2f           %6.2f           %7.2f           %8.2f\n", person[i].name_surname, person[i].lesson, person[i].midterm1, person[i].midterm2, person[i].final_grade, person[i].average);
+			printf("%10s           %9s           %5.2f            %7.2f          %9.2f         %8.2f\n", person[i].name_surname, person[i].lesson, person[i].midterm1, person[i].midterm2, person[i].final_grade, person[i].average);
 			printf("-----------------------------------\n");
 			i++;
 		}
