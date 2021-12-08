@@ -17,7 +17,7 @@ int main()
     printf("\n");
 
     FILE *file;
-    file = fopen("info.txt", "w");
+    file = fopen("Information.txt", "w");
     if(file == NULL){
 		printf("Failed to Create File.");
     }
