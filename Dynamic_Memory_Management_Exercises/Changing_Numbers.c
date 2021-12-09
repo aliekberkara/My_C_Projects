@@ -26,5 +26,7 @@ int main()
     number2 = temp;
     printf("First number: %d Second number: %d\n", *number1, *number2);
     printf("-------------------------------\n");
+    free(number1);
+    free(number2);
     return 0;
 }
