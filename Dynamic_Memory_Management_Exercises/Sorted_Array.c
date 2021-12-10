@@ -65,5 +65,6 @@ int main()
 	printf("\n---------------------\nBiggest: ");
 	Biggest(array, number);
 	printf("\n---------------------");
+	free(array);
     return 0;
 }
