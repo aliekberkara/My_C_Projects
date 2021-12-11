@@ -5,12 +5,17 @@
 /*
 Write a C program using dynamic memory to display the characters of a word entered by the user as follows.
 
-k
-k e
-k e l
-k e l i
-k e l i m
-k e l i m e
+p
+p r 
+p r o
+p r o g
+p r o g r
+p r o g r a
+p r o g r a m
+p r o g r a m m
+p r o g r a m m i
+p r o g r a m m i n
+p r o g r a m m i n g
 */
 
 int main()
