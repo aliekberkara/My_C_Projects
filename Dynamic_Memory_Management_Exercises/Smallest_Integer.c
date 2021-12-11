@@ -30,5 +30,6 @@ int main()
     }
     printf("%d", *min);
 	printf("\n-----------------------\n");
+    free(array);
     return 0;
 }
